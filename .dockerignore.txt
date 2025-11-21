@@ -1,0 +1,45 @@
+# Dependências
+node_modules
+npm-debug.log
+package-lock.json
+
+# Testes e coverage
+tests/
+coverage/
+*.test.js
+
+# Git
+.git
+.gitignore
+
+# CI/CD
+.github/
+
+# Arquivos de desenvolvimento
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Documentação
+README.md
+docs/
+*.md
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml
