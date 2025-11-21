@@ -32,4 +32,13 @@ app.get('/info', (req, res) => {
   });
 });
 
+// Rota de status
+app.get('/status', (req, res) => {
+  res.json({
+    status: 'online',
+    version: '1.1.0',
+    message: 'Pipeline funcionando perfeitamente!'
+  });
+});
+
 module.exports = app;

@@ -65,4 +65,15 @@ describe('API Endpoints', () => {
       expect(response.statusCode).toBe(404);
     });
   });
+
+  describe('GET /status', () => {
+  test('should return status information', async () => {
+    const response = await request(app).get('/status');
+    
+    expect(response.statusCode).toBe(200);
+    expect(response.body).toHaveProperty('status');
+    expect(response.body.status).toBe('online');
+    expect(response.body).toHaveProperty('message');
+  });
+});
 });
